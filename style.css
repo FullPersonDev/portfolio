@@ -71,9 +71,21 @@ main>section>nav>ul {
     column-gap: 8px;
 }
 .cards {
-    height: 300px;
+    display: flex;
+    align-items: end;
+    height: 250px;
     width: 350px;
     border: 8px solid rgb(207, 235, 235);
+    background-image: url(./images/card_background.PNG);
+    background-size: cover;
+}
+.cards>a {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(207, 235, 235);
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 4px;
 }
 
 /*This section is for Media Queries for responsiveness at various screen sizes*/
