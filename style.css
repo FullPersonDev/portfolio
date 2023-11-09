@@ -16,8 +16,12 @@ header {
     background-color:rgb(207, 235, 235);
     padding-left: 20px;
     padding-right: 40px;
-    height: 150px;
+    height: 200px;
     align-items: end;
+}
+.profilepic {
+    width: 100px;
+    height: 120px;
 }
 header>nav>ul {
     display: flex;
@@ -27,8 +31,8 @@ header>nav>ul {
     list-style: none;
 }
 header>nav>ul>li>a:hover {
-    box-shadow: 0 3px rgb(50, 136, 50);
-    color: rgb(50, 136, 50);
+    box-shadow: 0 3px rgb(74, 13, 243);
+    color: rgb(74, 13, 243);
 }
 
 /*This section styles my Main section elements*/
@@ -78,16 +82,22 @@ main>section>nav>ul>li:hover {
     row-gap: 15px;
     column-gap: 15px;
 }
-.cards {
+.card-child {
     display: flex;
     align-items: end;
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    min-width: 340px;
     border: 8px solid rgb(207, 235, 235);
     background-image: url(./images/card_background.PNG);
     background-size: cover;
 }
-.cards:hover {
+.card-child:first-child {
+    width: 100%;
+}
+.card-child:not(:first-child) {
+    flex: 1 1 340px;
+}
+.card-child:hover {
     box-shadow: 0 0 13px gray;
 }
 .cards>p {
@@ -101,7 +111,7 @@ main>section>nav>ul>li:hover {
 }
 
 /*This section is for Media Queries for responsiveness at various screen sizes*/
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1000px) {
     .main-sections {
         flex-direction: column;
         margin-left: 20px;
@@ -110,6 +120,9 @@ main>section>nav>ul>li:hover {
         height: 4px;
         width: 100%;
         margin-left: 0;
+    }
+    header {
+        height: 230px;
     }
 }
 
