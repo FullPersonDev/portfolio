@@ -16,7 +16,7 @@ header {
     background-color:rgb(207, 235, 235);
     padding-left: 20px;
     padding-right: 40px;
-    height: 120px;
+    height: 140px;
     align-items: end;
 }
 header>nav>ul {
@@ -29,18 +29,17 @@ header>nav>ul {
 
 /*This section styles my Main section elements*/
 .subtitle {
-    padding-right: 40px;
     height: 80px;
-    line-height: 80px;
+    padding-right: 40px;
+    padding-top: 30px;
     text-align: end;
-    vertical-align: middle;
     font-style: italic;
     color: rgb(50, 50, 187);
     font-size: 18px;
-    background-color: rgb(226, 245, 245);
 }
 .main-sections {
     display: flex;
+    flex-direction: row;
     margin-top: 20px;
 }
 .main-sections>h2 {
@@ -77,5 +76,33 @@ main>section>nav>ul {
     border: 8px solid rgb(207, 235, 235);
 }
 
+/*This section is for Media Queries for responsiveness at various screen sizes*/
+@media screen and (max-width: 975px) {
+    .main-sections {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .main-sections>hr {
+        height: 4px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
-/*This section is for Media Queries for responsiveness*/
+@media screen and (max-width: 920px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    header>nav>ul {
+        justify-content: space-evenly;
+    }
+    main>section>nav>ul {
+        flex-direction: column;
+        line-height: 35px;
+    }
+}
