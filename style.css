@@ -67,8 +67,8 @@ main>section>nav>ul {
 .cards-layout {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 8px;
-    column-gap: 8px;
+    row-gap: 15px;
+    column-gap: 15px;
 }
 .cards {
     display: flex;
@@ -78,6 +78,9 @@ main>section>nav>ul {
     border: 8px solid rgb(207, 235, 235);
     background-image: url(./images/card_background.PNG);
     background-size: cover;
+}
+.cards:hover {
+    box-shadow: 0 0 13px gray;
 }
 .cards>a {
     height: 40px;
