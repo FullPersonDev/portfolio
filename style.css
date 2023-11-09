@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -8,6 +11,36 @@ header>nav>ul {
     flex-direction: row;
     width: 400px;
     align-items: end;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main-sections {
+    display: flex;
+}
+.main-sections>h2 {
+    flex: 1;
+}
+.main-sections>hr {
+    border: none;
+    width: 4px;
+    background-color: rgb(63, 62, 62);
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.main-sections>.content {
+    flex: 4;
+}
+
+.cards {
+    height: 300px;
+    width: 300px;
+    border: 2px solid gray;
+}
+
+main>section>nav>ul {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style: none;
 }
